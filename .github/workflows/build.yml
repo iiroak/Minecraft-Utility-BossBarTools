@@ -69,7 +69,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.version.outputs.release_tag }}
-          name: "Boss Bar Tools - ${{ github.event.head_commit.message }}"
+          name: "Boss Bar Tools - Minecraft 1.21.4"
           body: ${{ github.event.head_commit.message }}
           files: build/libs/*.jar
           generate_release_notes: true
