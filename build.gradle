@@ -31,7 +31,7 @@ loom {
 	splitEnvironmentSourceSets()
 
 	mods {
-		"bossbarkiller" {
+		"bossbartools" {
 			sourceSet sourceSets.main
 			sourceSet sourceSets.client
 		}

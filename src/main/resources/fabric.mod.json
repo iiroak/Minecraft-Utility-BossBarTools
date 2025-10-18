@@ -1,35 +1,35 @@
 {
 	"schemaVersion": 1,
-	"id": "bossbarkiller",
+	"id": "bossbartools",
 	"version": "${version}",
-	"name": "BossBarKiller",
+	"name": "Boss Bar Tools",
 	"description": "A simple mod that completely hides all boss bars in Minecraft",
 	"authors": [
 		"iroak"
 	],
 	"contact": {
-		"homepage": "https://github.com/yourusername/bossbarkiller",
-		"sources": "https://github.com/yourusername/bossbarkiller",
-		"issues": "https://github.com/yourusername/bossbarkiller/issues"
+		"homepage": "https://github.com/yourusername/bossbartools",
+		"sources": "https://github.com/yourusername/bossbartools",
+		"issues": "https://github.com/yourusername/bossbartools/issues"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/bossbarkiller/icon.png",
+	"icon": "assets/bossbartools/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"iroak.bossbar.BossBarKiller"
+			"iroak.bossbar.BossBarTools"
 		],
 		"client": [
-			"iroak.bossbar.BossBarKillerClient"
+			"iroak.bossbar.BossBarToolsClient"
 		],
 		"modmenu": [
 			"iroak.bossbar.config.ModMenuIntegration"
 		]
 	},
 	"mixins": [
-		"bossbarkiller.mixins.json",
+		"bossbartools.mixins.json",
 		{
-			"config": "bossbarkiller.client.mixins.json",
+			"config": "bossbartools.client.mixins.json",
 			"environment": "client"
 		}
 	],

@@ -1,0 +1,46 @@
+{
+  "key.bossbartools.toggle": "Toggle Boss Bar Tools",
+  
+  "category.bossbartools.general": "General Settings",
+  "category.bossbartools.exactmatch": "Exact Match Filters", 
+  "category.bossbartools.contains": "Contains Filters",
+  "category.bossbartools.regex": "Regex Filters",
+  
+  "message.bossbartools.enabled": "Boss bars hidden",
+  "message.bossbartools.disabled": "Boss bars visible",
+  
+  "text.autoconfig.bossbartools.title": "Boss Bar Tools Configuration",
+  
+  "text.autoconfig.bossbartools.option.hideBossBars": "Hide Boss Bars",
+  "text.autoconfig.bossbartools.option.hideBossBars.@Tooltip": "Master toggle for hiding boss bars. When disabled, no boss bars will be hidden regardless of filters.",
+  
+  "text.autoconfig.bossbartools.option.showToggleMessage": "Show Toggle Messages",
+  "text.autoconfig.bossbartools.option.showToggleMessage.@Tooltip": "Show a message in the action bar when toggling boss bar visibility with the keybind",
+  
+  "text.autoconfig.bossbartools.option.enableDebugLogging": "Enable Debug Logging",
+  "text.autoconfig.bossbartools.option.enableDebugLogging.@Tooltip": "Show detailed debug information in the console for troubleshooting filtering issues",
+  
+  "text.autoconfig.bossbartools.option.enableFiltering": "Enable Filtering",
+  "text.autoconfig.bossbartools.option.enableFiltering.@Tooltip": "When enabled, only boss bars matching your filters will be hidden. When disabled, ALL boss bars are hidden.",
+  
+  "text.autoconfig.bossbartools.keybind.info": "Press 'H' key to toggle boss bars in-game. You can change this keybind in Options > Controls > Key Binds > Boss Bar Tools.",
+  
+  "text.autoconfig.bossbartools.option.exactMatchFilters": "Exact Match Filter List",
+  "text.autoconfig.bossbartools.option.exactMatchFilters.@Tooltip": "Boss bars with titles that exactly match these strings will be hidden (case-insensitive)",
+  
+  "text.autoconfig.bossbartools.exactmatch.description": "Hide boss bars whose titles exactly match the specified strings. Matching is case-insensitive.",
+  "text.autoconfig.bossbartools.exactmatch.examples": "Examples: 'Ender Dragon' will hide only boss bars titled exactly 'Ender Dragon', but not 'The Ender Dragon' or 'Ender Dragon Health'.",
+  
+  "text.autoconfig.bossbartools.option.containsFilters": "Contains Filter List",
+  "text.autoconfig.bossbartools.option.containsFilters.@Tooltip": "Boss bars with titles containing any of these strings will be hidden (case-insensitive)",
+  
+  "text.autoconfig.bossbartools.contains.description": "Hide boss bars whose titles contain the specified strings anywhere within them. Matching is case-insensitive.",
+  "text.autoconfig.bossbartools.contains.examples": "Examples: 'fish' will hide 'Big Fish', 'Fishing Progress', 'Goldfish Health', etc. 'dragon' will hide 'Ender Dragon', 'Dragon Fight', etc.",
+  
+  "text.autoconfig.bossbartools.option.regexFilters": "Regex Filter List",
+  "text.autoconfig.bossbartools.option.regexFilters.@Tooltip": "Boss bars with titles matching these regular expressions will be hidden. Advanced users only!",
+  
+  "text.autoconfig.bossbartools.regex.description": "Hide boss bars whose titles match the specified regular expressions. This is for advanced users familiar with regex patterns.",
+  "text.autoconfig.bossbartools.regex.examples": "Examples: '^.*[Ff]ish.*$' matches any title containing 'fish' or 'Fish'. '\\\\d+%' matches titles with percentages like '75%'.",
+  "text.autoconfig.bossbartools.regex.warning": "⚠️ Warning: Invalid regex patterns will be ignored. Test your patterns carefully!"
+}

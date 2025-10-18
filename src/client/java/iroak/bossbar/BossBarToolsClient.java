@@ -7,9 +7,9 @@ import net.minecraft.client.option.KeyBinding;
 import net.minecraft.client.util.InputUtil;
 import net.minecraft.text.Text;
 import org.lwjgl.glfw.GLFW;
-import iroak.bossbar.config.BossBarKillerConfig;
+import iroak.bossbar.config.BossBarToolsConfig;
 
-public class BossBarKillerClient implements ClientModInitializer {
+public class BossBarToolsClient implements ClientModInitializer {
 	
 	private static KeyBinding toggleBossBarKey;
 	
@@ -17,34 +17,34 @@ public class BossBarKillerClient implements ClientModInitializer {
 	public void onInitializeClient() {
 		// Register keybinding
 		toggleBossBarKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-			"key.bossbarkiller.toggle", // Translation key
+			"key.bossbartools.toggle", // Translation key
 			InputUtil.Type.KEYSYM, // Key type
 			GLFW.GLFW_KEY_H, // Default key (H)
-			"category.bossbarkiller.general" // Category
+			"category.bossbartools.general" // Category
 		));
 		
 		// Register tick event for handling key presses
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (toggleBossBarKey.wasPressed()) {
-				if (client.player != null && BossBarKiller.getConfig() != null) {
+				if (client.player != null && BossBarTools.getConfig() != null) {
 					// Toggle the configuration
-					BossBarKillerConfig config = BossBarKiller.getConfig();
+					BossBarToolsConfig config = BossBarTools.getConfig();
 					boolean previousState = config.hideBossBars;
 					config.hideBossBars = !config.hideBossBars;
 					config.save();
 					
 					// Update the main config reference
-					BossBarKiller.CONFIG = config;
+					BossBarTools.CONFIG = config;
 					
 					// Show message to player if enabled
 					if (config.showToggleMessage) {
 						String messageKey = config.hideBossBars ? 
-							"message.bossbarkiller.enabled" : "message.bossbarkiller.disabled";
+							"message.bossbartools.enabled" : "message.bossbartools.disabled";
 						client.player.sendMessage(Text.translatable(messageKey), true);
 					}
 					
 					// Log the change for debugging
-					BossBarKiller.LOGGER.info("Boss bar visibility toggled: {} -> {}", 
+					BossBarTools.LOGGER.info("Boss bar visibility toggled: {} -> {}", 
 						previousState, config.hideBossBars);
 				}
 			}

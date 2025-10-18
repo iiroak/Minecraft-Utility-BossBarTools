@@ -41,7 +41,7 @@ The original boss bar hiding logic in Meteor Client can be found in their No Ren
 
 ## License Compatibility
 
-This project (Boss Bar Killer) is released under CC0-1.0 (Public Domain), making it completely free and open source. While inspired by GPL-licensed code from Meteor Client, our implementation is original and does not include any copyrighted code from Meteor Client.
+This project (Boss Bar Tools) is released under CC0-1.0 (Public Domain), making it completely free and open source. While inspired by GPL-licensed code from Meteor Client, our implementation is original and does not include any copyrighted code from Meteor Client.
 
 The inspiration and concepts are used under the principles of fair use and independent implementation, similar to how many programming concepts and algorithms are shared across the software development community.
 
