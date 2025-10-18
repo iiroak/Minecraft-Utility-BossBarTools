@@ -1,4 +1,4 @@
-# Boss Bar Tools (Vibe Coding, I don't feel like doing it from scratch)
+# Boss Bar Tools
 
 A simple and configurable Fabric mod for Minecraft 1.21.4 that allows you to hide boss bars completely or toggle their visibility on demand.
 
@@ -17,13 +17,13 @@ A simple and configurable Fabric mod for Minecraft 1.21.4 that allows you to hid
 
 ### Requirements
 - **Minecraft 1.21.4**
-- **Fabric Loader** (0.17.3 or newer)
-- **Fabric API**
+- **Fabric Loader 0.17.3+**
+- **Fabric API** (compatible version)
 - **Mod Menu** (recommended for configuration access)
 
 ### Steps
-1. Download the latest release from the releases page
-2. Place `bossbarkiller-1.0.0.jar` in your `mods` folder
+1. Download the latest JAR from the [releases page](../../releases)
+2. Place `bossbartools-1.0.0.jar` in your `mods` folder
 3. Launch Minecraft with Fabric
 
 ## ⚙️ Usage
@@ -74,7 +74,7 @@ A simple and configurable Fabric mod for Minecraft 1.21.4 that allows you to hid
 - `"^(Ender Dragon|Wither)$"` → Matches exactly "Ender Dragon" OR "Wither"
 
 ### Manual Configuration
-The mod creates a configuration file at `config/bossbarkiller.json` that you can edit directly:
+The mod creates a configuration file at `config/bossbartools.json` that you can edit directly:
 
 ```json
 {
@@ -162,21 +162,33 @@ This mod is released under the **Creative Commons Zero v1.0 Universal (CC0-1.0)*
 ### Building from Source
 ```bash
 git clone <repository-url>
-cd bossbarkiller-template-1.21.4
+cd bossbartools-template-1.21.4
 ./gradlew build
 ```
 
-The compiled mod will be available in `build/libs/bossbarkiller-1.0.0.jar`
+The compiled mod will be available in `build/libs/bossbartools-1.0.0.jar`
+
+### Automated Releases
+This project automatically creates releases when you push to main:
+
+- **Automatic Build & Release**: Every push to main triggers a new release
+- **No Manual Tags**: Just commit and push your changes
+- **Instant Availability**: Compiled JARs are immediately available in releases
+
+To create a new release:
+1. Make your changes and commit: `git commit -m "Your changes"`
+2. Push to main: `git push origin main`
+3. GitHub Actions automatically builds and creates the release
 
 ### Project Structure
 ```
 src/
 ├── main/java/iroak/bossbar/
-│   ├── BossBarKiller.java          # Main mod class
+│   ├── BossBarTools.java          # Main mod class
 │   └── config/
-│       └── BossBarKillerConfig.java # Configuration handling
+│       └── BossBarToolsConfig.java # Configuration handling
 └── client/java/iroak/bossbar/
-    ├── BossBarKillerClient.java     # Client-side initialization
+    ├── BossBarToolsClient.java     # Client-side initialization
     ├── config/
     │   └── ModMenuIntegration.java  # Mod Menu integration
     └── mixin/client/
