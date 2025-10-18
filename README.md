@@ -149,7 +149,7 @@ The core boss bar hiding functionality was inspired by the "No Render" module fr
 ## 📄 License & Credits
 
 ### This Project
-This mod is released under the **Creative Commons Zero v1.0 Universal (CC0-1.0)** license, making it completely free and open source.
+This mod is released under the **MIT License**, making it completely free and open source.
 
 ### Acknowledgments
 - **Meteor Client Development Team** - For the open-source boss bar hiding implementation that inspired this mod
