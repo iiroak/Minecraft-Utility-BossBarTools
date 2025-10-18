@@ -2,6 +2,10 @@
 # Also runs tests for pull requests
 
 name: Build and Release
+
+permissions:
+  contents: write
+  
 on: 
   pull_request:
     branches: [ main ]
@@ -69,3 +73,5 @@ jobs:
           body: ${{ github.event.head_commit.message }}
           files: build/libs/*.jar
           generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
