@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "iroak.bossbar.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"BossBarHiderMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

@@ -1,0 +1,13 @@
+{
+  "key.bossbarkiller.toggle": "Toggle Boss Bar Killer",
+  "category.bossbarkiller.general": "Boss Bar Killer",
+  "message.bossbarkiller.enabled": "Boss bars hidden",
+  "message.bossbarkiller.disabled": "Boss bars visible",
+  
+  "text.autoconfig.bossbarkiller.title": "Boss Bar Killer Configuration",
+  "text.autoconfig.bossbarkiller.option.hideBossBars": "Hide Boss Bars",
+  "text.autoconfig.bossbarkiller.option.hideBossBars.@Tooltip": "When enabled, all boss bars will be completely hidden from view",
+  "text.autoconfig.bossbarkiller.option.showToggleMessage": "Show Toggle Messages",
+  "text.autoconfig.bossbarkiller.option.showToggleMessage.@Tooltip": "Show a message in the action bar when toggling boss bar visibility",
+  "text.autoconfig.bossbarkiller.keybind.info": "Press 'H' key to toggle boss bars in-game. You can change this keybind in Options > Controls > Key Binds > Boss Bar Killer."
+}

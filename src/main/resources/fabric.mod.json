@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "bossbarkiller",
+	"version": "${version}",
+	"name": "BossBarKiller",
+	"description": "A simple mod that completely hides all boss bars in Minecraft",
+	"authors": [
+		"iroak"
+	],
+	"contact": {
+		"homepage": "https://github.com/yourusername/bossbarkiller",
+		"sources": "https://github.com/yourusername/bossbarkiller",
+		"issues": "https://github.com/yourusername/bossbarkiller/issues"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/bossbarkiller/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"iroak.bossbar.BossBarKiller"
+		],
+		"client": [
+			"iroak.bossbar.BossBarKillerClient"
+		],
+		"modmenu": [
+			"iroak.bossbar.config.ModMenuIntegration"
+		]
+	},
+	"mixins": [
+		"bossbarkiller.mixins.json",
+		{
+			"config": "bossbarkiller.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}

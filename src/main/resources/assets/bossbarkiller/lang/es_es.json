@@ -1,0 +1,13 @@
+{
+  "key.bossbarkiller.toggle": "Alternar Ocultador de Barras de Boss",
+  "category.bossbarkiller.general": "Boss Bar Killer",
+  "message.bossbarkiller.enabled": "Barras de boss ocultas",
+  "message.bossbarkiller.disabled": "Barras de boss visibles",
+  
+  "text.autoconfig.bossbarkiller.title": "Configuración de Boss Bar Killer",
+  "text.autoconfig.bossbarkiller.option.hideBossBars": "Ocultar Barras de Boss",
+  "text.autoconfig.bossbarkiller.option.hideBossBars.@Tooltip": "Cuando está activado, todas las barras de boss estarán completamente ocultas",
+  "text.autoconfig.bossbarkiller.option.showToggleMessage": "Mostrar Mensajes de Alternado",
+  "text.autoconfig.bossbarkiller.option.showToggleMessage.@Tooltip": "Mostrar un mensaje en la barra de acción al alternar la visibilidad de las barras de boss",
+  "text.autoconfig.bossbarkiller.keybind.info": "Presiona la tecla 'H' para alternar las barras de boss en el juego. Puedes cambiar esta tecla en Opciones > Controles > Asignación de Teclas > Boss Bar Killer."
+}
