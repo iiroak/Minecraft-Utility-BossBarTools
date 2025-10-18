@@ -1,53 +1,45 @@
 {
   "key.bossbartools.toggle": "Alternar Herramientas de Barras de Boss",
-  
+
   "category.bossbartools.general": "Configuración General",
   "category.bossbartools.exactmatch": "Filtros de Coincidencia Exacta",
   "category.bossbartools.contains": "Filtros de Contiene",
   "category.bossbartools.regex": "Filtros de Expresiones Regulares",
-  
+
   "message.bossbartools.enabled": "Barras de boss ocultas",
   "message.bossbartools.disabled": "Barras de boss visibles",
-  
+
   "text.autoconfig.bossbartools.title": "Configuración de Boss Bar Tools",
-  
+
   "text.autoconfig.bossbartools.option.hideBossBars": "Ocultar Barras de Boss",
   "text.autoconfig.bossbartools.option.hideBossBars.@Tooltip": "Interruptor principal para ocultar barras de boss. Cuando está desactivado, no se ocultarán barras independientemente de los filtros.",
-  
+
   "text.autoconfig.bossbartools.option.showToggleMessage": "Mostrar Mensajes de Alternado",
   "text.autoconfig.bossbartools.option.showToggleMessage.@Tooltip": "Mostrar un mensaje en la barra de acción al alternar la visibilidad con la tecla asignada",
-  
+
   "text.autoconfig.bossbartools.option.enableDebugLogging": "Habilitar Logging de Debug",
   "text.autoconfig.bossbartools.option.enableDebugLogging.@Tooltip": "Mostrar información detallada de debug en la consola para solucionar problemas de filtrado",
-  
+
   "text.autoconfig.bossbartools.option.enableFiltering": "Habilitar Filtrado",
   "text.autoconfig.bossbartools.option.enableFiltering.@Tooltip": "Cuando está habilitado, solo se ocultarán las barras que coincidan con tus filtros. Cuando está deshabilitado, se ocultan TODAS las barras.",
-  
+
   "text.autoconfig.bossbartools.keybind.info": "Presiona la tecla 'H' para alternar las barras de boss en el juego. Puedes cambiar esta tecla en Opciones > Controles > Asignación de Teclas > Boss Bar Tools.",
-  
+
   "text.autoconfig.bossbartools.option.exactMatchFilters": "Lista de Filtros de Coincidencia Exacta",
   "text.autoconfig.bossbartools.option.exactMatchFilters.@Tooltip": "Se ocultarán las barras de boss con títulos que coincidan exactamente con estas cadenas (no distingue mayúsculas/minúsculas)",
-  
+
   "text.autoconfig.bossbartools.exactmatch.description": "Oculta barras de boss cuyos títulos coincidan exactamente con las cadenas especificadas. No distingue entre mayúsculas y minúsculas.",
   "text.autoconfig.bossbartools.exactmatch.examples": "Ejemplos: 'Ender Dragon' ocultará solo barras tituladas exactamente 'Ender Dragon', pero no 'The Ender Dragon' o 'Ender Dragon Health'.",
-  
+
   "text.autoconfig.bossbartools.option.containsFilters": "Lista de Filtros de Contiene",
   "text.autoconfig.bossbartools.option.containsFilters.@Tooltip": "Se ocultarán las barras de boss con títulos que contengan cualquiera de estas cadenas (no distingue mayúsculas/minúsculas)",
 
-  "text.autoconfig.bossbartools.contains.description": "Oculta barras de boss cuyos títulos contengan las cadenas especificadas en cualquier parte. No distingue entre mayúsculas y minúsculas.",  "text.autoconfig.bossbarkiller.contains.description": "Oculta barras de boss cuyos títulos contengan las cadenas especificadas en cualquier parte. No distingue entre mayúsculas y minúsculas.",
+  "text.autoconfig.bossbartools.contains.description": "Oculta barras de boss cuyos títulos contengan las cadenas especificadas en cualquier parte. No distingue entre mayúsculas y minúsculas.",
+  "text.autoconfig.bossbartools.contains.examples": "Ejemplos: 'fish' ocultará 'Big Fish', 'Fishing Progress', 'Goldfish Health', etc. 'dragon' ocultará 'Ender Dragon', 'Dragon Fight', etc.",
 
-  "text.autoconfig.bossbartools.contains.examples": "Ejemplos: 'fish' ocultará 'Big Fish', 'Fishing Progress', 'Goldfish Health', etc. 'dragon' ocultará 'Ender Dragon', 'Dragon Fight', etc.",  "text.autoconfig.bossbarkiller.contains.examples": "Ejemplos: 'fish' ocultará 'Big Fish', 'Fishing Progress', 'Goldfish Health', etc. 'dragon' ocultará 'Ender Dragon', 'Dragon Fight', etc.",
-
-    
-
-  "text.autoconfig.bossbartools.option.regexFilters": "Lista de Filtros de Expresiones Regulares",  "text.autoconfig.bossbarkiller.option.regexFilters": "Lista de Filtros de Expresiones Regulares",
-
-  "text.autoconfig.bossbartools.option.regexFilters.@Tooltip": "Se ocultarán las barras de boss con títulos que coincidan con estas expresiones regulares. ¡Solo para usuarios avanzados!",  "text.autoconfig.bossbarkiller.option.regexFilters.@Tooltip": "Se ocultarán las barras de boss con títulos que coincidan con estas expresiones regulares. ¡Solo para usuarios avanzados!",
-
-  "text.autoconfig.bossbartools.regex.description": "Oculta barras de boss cuyos títulos coincidan con las expresiones regulares especificadas. Esto es para usuarios avanzados familiarizados con patrones regex.",  "text.autoconfig.bossbarkiller.regex.description": "Oculta barras de boss cuyos títulos coincidan con las expresiones regulares especificadas. Esto es para usuarios avanzados familiarizados con patrones regex.",
-
-  "text.autoconfig.bossbartools.regex.examples": "Ejemplos: '^.*[Ff]ish.*$' coincide con cualquier título que contenga 'fish' o 'Fish'. '\\\\d+%' coincide con títulos con porcentajes como '75%'.",  "text.autoconfig.bossbarkiller.regex.examples": "Ejemplos: '^.*[Ff]ish.*$' coincide con cualquier título que contenga 'fish' o 'Fish'. '\\\\d+%' coincide con títulos con porcentajes como '75%'.",
-
-  "text.autoconfig.bossbartools.regex.warning": "⚠️ Advertencia: Los patrones regex inválidos serán ignorados. ¡Prueba tus patrones cuidadosamente!",  "text.autoconfig.bossbarkiller.regex.warning": "⚠️ Advertencia: Los patrones regex inválidos serán ignorados. ¡Prueba tus patrones cuidadosamente!"
-
+  "text.autoconfig.bossbartools.option.regexFilters": "Lista de Filtros de Expresiones Regulares",
+  "text.autoconfig.bossbartools.option.regexFilters.@Tooltip": "Se ocultarán las barras de boss con títulos que coincidan con estas expresiones regulares. ¡Solo para usuarios avanzados!",
+  "text.autoconfig.bossbartools.regex.description": "Oculta barras de boss cuyos títulos coincidan con las expresiones regulares especificadas. Esto es para usuarios avanzados familiarizados con patrones regex.",
+  "text.autoconfig.bossbartools.regex.examples": "Ejemplos: '^.*[Ff]ish.*$' coincide con cualquier título que contenga 'fish' o 'Fish'. '\\\\d+%' coincide con títulos con porcentajes como '75%'.",
+  "text.autoconfig.bossbartools.regex.warning": "Advertencia: Los patrones regex inválidos serán ignorados. ¡Prueba tus patrones cuidadosamente!"
 }

@@ -42,5 +42,5 @@
   
   "text.autoconfig.bossbartools.regex.description": "Hide boss bars whose titles match the specified regular expressions. This is for advanced users familiar with regex patterns.",
   "text.autoconfig.bossbartools.regex.examples": "Examples: '^.*[Ff]ish.*$' matches any title containing 'fish' or 'Fish'. '\\\\d+%' matches titles with percentages like '75%'.",
-  "text.autoconfig.bossbartools.regex.warning": "⚠️ Warning: Invalid regex patterns will be ignored. Test your patterns carefully!"
+  "text.autoconfig.bossbartools.regex.warning": "Warning: Invalid regex patterns will be ignored. Test your patterns carefully!"
 }
